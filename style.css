@@ -1,0 +1,88 @@
+/* Fichier : style.css */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap');
+
+:root {
+    --black: #000000;
+    --dark-grey: #121212;
+    --gold: #d4af37;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(0,0,0,0.9);
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.8rem;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.logo span { color: var(--gold); }
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav-links a.active { color: var(--gold); }
+
+/* Titres */
+.section-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.section-title span { color: var(--gold); }
+
+/* Containers */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Boutons */
+.btn-main {
+    background: var(--gold);
+    color: var(--black);
+    border: none;
+    padding: 15px 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
+    background: var(--white);
+}
