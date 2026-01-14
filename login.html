@@ -37,9 +37,7 @@
     <script>
         function connecter() {
             const email = document.getElementById('user-email').value;
-            // On enregistre une session fictive pour que l'index sache qu'on est connecté
             localStorage.setItem('fit_account', JSON.stringify({ email: email, status: 'connected' }));
-            // Redirection vers l'accueil
             window.location.href = 'index.html';
         }
     </script>
