@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT365 | Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: var(--black); display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+
+    <div style="width: 100%; max-width: 400px; padding: 40px; text-align: center;">
+        <a href="index.html" class="logo" style="font-size: 2.5rem; margin-bottom: 40px; display: block;">FIT<span>365</span></a>
+        
+        <h2 style="font-family: 'Archivo Black', sans-serif; color: var(--white); text-transform: uppercase; margin-bottom: 30px;">Identifie-toi</h2>
+        
+        <form onsubmit="event.preventDefault(); window.location.href='index.html';" style="display: grid; gap: 20px;">
+            <input type="email" placeholder="Email" required 
+                style="width: 100%; padding: 18px; background: var(--dark); border: 1px solid var(--grey); border-radius: 10px; color: white; font-size: 1rem; box-sizing: border-box;">
+            
+            <input type="password" placeholder="Mot de passe" required 
+                style="width: 100%; padding: 18px; background: var(--dark); border: 1px solid var(--grey); border-radius: 10px; color: white; font-size: 1rem; box-sizing: border-box;">
+            
+            <button type="submit" class="btn-gold" style="width: 100%; border: none; cursor: pointer; border-radius: 10px;">
+                ACCÉDER AU CLUB
+            </button>
+        </form>
+
+        <p style="color: #666; margin-top: 25px; font-size: 0.9rem;">
+            Pas encore membre ? <span style="color: var(--gold); cursor: pointer;">Crée ton compte</span>
+        </p>
+    </div>
+
+</body>
+</html>
