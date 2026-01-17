@@ -3,79 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIT365 | Mon Profil</title>
+    <title>FIT365 | Mon Profil Élite</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background: var(--black); color: white;">
+<body style="background: var(--black); color: white; margin: 0;">
 
     <nav class="top-nav">
         <a href="index.html" class="logo">FIT<span>365</span></a>
         <div class="nav-links">
-            <a href="index.html">ACCUEIL</a>
-            <a href="suivi.html">SUIVI</a>
-            <a href="profile.html" class="active">PROFIL</a>
+            <a href="repas.html">NUTRITION</a>
+            <a href="sport.html">ENTRAÎNEMENT</a>
+            <a href="suivi.html">PROGRESSION</a>
+            <a href="profile.html" class="active">MON PROFIL</a>
         </div>
     </nav>
 
-    <main style="padding: 120px 8% 50px;">
-        <div style="max-width: 800px; margin: auto;">
+    <main style="padding: 150px 8% 50px; min-height: 80vh;">
+        <div style="max-width: 900px; margin: auto;">
             
-            <header style="text-align: left; margin-bottom: 40px;">
-                <h1 style="font-family: 'Archivo Black'; color: var(--gold); font-size: 2.5rem; margin: 0;">MON COMPTE</h1>
-                <p style="color: #666;">Gère tes informations personnelles et la sécurité de ton compte.</p>
-            </header>
+            <div style="text-align: left; margin-bottom: 50px;">
+                <h1 style="font-family: 'Archivo Black', sans-serif; color: var(--gold); font-size: clamp(2rem, 5vw, 3.5rem); text-transform: uppercase; margin: 0;">
+                    Profil <span style="color: white;">Membre</span>
+                </h1>
+                <p style="color: #666; font-size: 1.1rem; margin-top: 10px;">Gère tes accès et tes informations personnelles FIT365.</p>
+            </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
                 
-                <div class="feature-card" style="padding: 30px;">
-                    <h3 style="margin-top: 0; font-size: 1.2rem; border-bottom: 1px solid #222; padding-bottom: 15px;">COORDONNÉES</h3>
-                    <div style="display: grid; gap: 15px; margin-top: 20px; text-align: left;">
+                <div class="feature-card" style="text-align: left;">
+                    <h3 style="margin-top: 0; border-bottom: 1px solid var(--grey); padding-bottom: 20px; letter-spacing: 1px;">COORDONNÉES</h3>
+                    
+                    <div style="display: grid; gap: 25px; margin-top: 25px;">
                         <div>
-                            <label style="color: #444; font-size: 0.75rem; text-transform: uppercase; font-weight: 900;">Nom complet</label>
-                            <p id="prof-name" style="margin: 5px 0; font-weight: bold;">Jean Dupont</p>
+                            <label style="color: var(--gold); font-size: 0.7rem; font-weight: 900; text-transform: uppercase;">Nom de l'athlète</label>
+                            <p id="display-name" style="font-size: 1.2rem; margin: 5px 0; font-weight: 400;">Non renseigné</p>
                         </div>
+                        
                         <div>
-                            <label style="color: #444; font-size: 0.75rem; text-transform: uppercase; font-weight: 900;">Email</label>
-                            <p id="prof-email" style="margin: 5px 0; font-weight: bold;">chargement...</p>
+                            <label style="color: var(--gold); font-size: 0.7rem; font-weight: 900; text-transform: uppercase;">Adresse Email</label>
+                            <p id="display-email" style="font-size: 1.2rem; margin: 5px 0; font-weight: 400;">chargement...</p>
                         </div>
+
                         <div>
-                            <label style="color: #444; font-size: 0.75rem; text-transform: uppercase; font-weight: 900;">Téléphone</label>
-                            <p id="prof-phone" style="margin: 5px 0; font-weight: bold;">+33 6 00 00 00 00</p>
+                            <label style="color: var(--gold); font-size: 0.7rem; font-weight: 900; text-transform: uppercase;">Numéro de téléphone</label>
+                            <p id="display-phone" style="font-size: 1.2rem; margin: 5px 0; font-weight: 400;">+33 6 -- -- -- --</p>
                         </div>
                     </div>
+
+                    <button onclick="alert('Fonctionnalité de modification bientôt disponible')" 
+                            style="margin-top: 30px; background: transparent; border: 1px solid #333; color: #888; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 0.8rem;">
+                        MODIFIER MES INFOS
+                    </button>
                 </div>
 
-                <div class="feature-card" style="padding: 30px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="feature-card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
                     <div>
-                        <h3 style="margin-top: 0; font-size: 1.2rem; border-bottom: 1px solid #222; padding-bottom: 15px;">SÉCURITÉ</h3>
-                        <p style="font-size: 0.9rem; color: #888; margin-top: 20px;">Dernière connexion : Aujourd'hui</p>
+                        <h3 style="margin-top: 0; border-bottom: 1px solid var(--grey); padding-bottom: 20px; letter-spacing: 1px;">SÉCURITÉ</h3>
+                        <p style="color: #555; font-size: 0.9rem; margin-top: 20px;">Statut du compte : <span style="color: #2ecc71;">ACTIF (ÉLITE)</span></p>
                     </div>
-                    
-                    <div style="display: grid; gap: 10px; margin-top: 20px;">
-                        <a href="change-password.html" class="btn-gold" style="padding: 15px; font-size: 0.8rem; text-align: center;">Changer le mot de passe</a>
-                        <button onclick="deconnexion()" style="background: transparent; border: 1px solid #ff4444; color: #ff4444; padding: 15px; border-radius: 50px; cursor: pointer; font-weight: bold; transition: 0.3s;">DÉCONNEXION</button>
+
+                    <div style="display: grid; gap: 15px; margin-top: 40px;">
+                        <a href="change-password.html" class="btn-gold" style="text-align: center; padding: 15px; font-size: 0.9rem;">
+                            CHANGER MON MOT DE PASSE
+                        </a>
+                        
+                        <button onclick="deconnexion()" 
+                                style="background: #111; color: #ff4444; border: 1px solid #ff4444; padding: 15px; border-radius: 50px; cursor: pointer; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;">
+                            SE DÉCONNECTER
+                        </button>
                     </div>
                 </div>
 
             </div>
-
         </div>
     </main>
 
+    <footer style="text-align: center; padding: 50px; color: #222; border-top: 1px solid #111; margin-top: 50px;">
+        <p>© 2026 FIT365 ELITE COACHING. TOUS DROITS RÉSERVÉS.</p>
+    </footer>
+
     <script>
+        // Vérification de la connexion au chargement
         window.onload = function() {
-            const user = JSON.parse(localStorage.getItem('fit_account'));
-            if (!user) {
-                window.location.href = 'login.html'; // Redirige si pas connecté
+            const userData = localStorage.getItem('fit_account');
+            
+            if (!userData) {
+                // Si pas de compte en mémoire, retour à la connexion
+                window.location.href = 'login.html';
             } else {
-                document.getElementById('prof-email').innerText = user.email;
+                const user = JSON.parse(userData);
+                document.getElementById('display-email').innerText = user.email;
+                
+                // Si tu as stocké le nom dans le futur, on l'affichera ici
+                if(user.name) document.getElementById('display-name').innerText = user.name;
             }
         }
 
+        // Fonction de déconnexion reprise de ton index
         function deconnexion() {
             localStorage.removeItem('fit_account');
             window.location.href = 'index.html';
         }
     </script>
+
 </body>
 </html>
